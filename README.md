@@ -6,4 +6,4 @@ Tarea del Formulario
   No entiendo un pomo de JS!!!!
 </p>
 
-<a href="http://www.google.com">Google</a>
+<a href="http://www.google.com" target="_blank">Google</a>

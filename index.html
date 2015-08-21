@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Formulario</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="index.css">
+
 </head>
+<!-- Armar un formulario usando bootstrap y grillas (dos columnas con campos, nombre, apellido, dirección dni, telefono) -->
 <body>
 	<header>
 		<div class="container">
@@ -13,11 +15,45 @@
 		</div>
 	</header>
 
-	<section class="formulario row">
-		<form action=""></form>
-	</section>
-
+	<div class="container">
+		
+		<section class="formulario row">
+			<form class="registro novalidate col-xs-1 col-sm-1 col-md-1">
+				<label>Nombre
+					<input type="text" placeholder="Juan" name="nombre">
+				</label> 
+				<label>Apellido
+					<input type="text" placeholder="Perez" name="apellido">
+				</label>
+				<label>Dirección
+					<input type="text" placeholder="Parana 789" name="direccion">
+				</label>
+				<label>DNI
+					<input type="text" name="DNI" placeholder="11222333" name="dni">
+				</label>
+				<label>Teléfono
+					<input type="tel" name="telefono" placeholder="54115557788" "tel">
+				</label>
+				<input class="btn btn-default" type="submit" value="submit">
+			</form>
+			<!-- <div class="col-xs-1 col-sm-1 col-md-1">
+				<label for="nombre">Nombre</label> 
+				<label for="apellido">Apellido</label>
+				<label for="direccion">Dirección</label>
+				<label for="dni">DNI</label>
+				<label for="telefono">Teléfono</label>
+			</div>
+			
+			<div class="col-xs-1 col-sm-1 col-md-1">
+				<input type="text" placeholder="Juan">
+				<input type="text" placeholder="Perez">
+				<input type="text" placeholder="Parana 789">
+				<input type="number" name="DNI" placeholder="11222333">
+				<input type="tel" name="telefono" placeholder="54115557788">
+			</div>-->
+		</section>
+	</div>		
 	
-	
+	<script src="validador.js"></script>
 </body>
 </html>
